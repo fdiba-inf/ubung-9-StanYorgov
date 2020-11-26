@@ -11,7 +11,7 @@ public class Ellipse {
         width = 1;
     }
 
-    public Ellipse (Point startPoint, double width, double height) {
+    public Ellipse (Point startPoint, double height, double width) {
         this.startPoint = new Point(startPoint);
         this.height = height;
         this.width = width;
@@ -32,10 +32,10 @@ public class Ellipse {
             System.out.println("Enter the start point: ");
             this.startPoint.initialize();
 
-            System.out.println("Enter the height: ");
+            System.out.print("Enter the height: ");
             this.height = Utils.INPUT.nextDouble();
 
-            System.out.println("Enter the width: ");
+            System.out.print("Enter the width: ");
             this.width = Utils.INPUT.nextDouble();
 
         } while (!isValid());
